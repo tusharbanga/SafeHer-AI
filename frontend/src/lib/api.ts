@@ -108,6 +108,12 @@ export const authApi = {
       body,
       auth: false,
     }),
+  forgotPassword: (body: { email: string }) =>
+    request<{ success: boolean; message: string }>('/v1/auth/forgot-password', {
+      method: "POST" as HttpMethod,
+      body,
+      auth: false,
+    }),
   firebaseAuthenticate: (body: { idToken: string; name?: string; phone?: string }) =>
     request<{ success: boolean; message: string; data: { user: unknown; accessToken: string; refreshToken: string } }>('/v1/auth/firebase', {
       method: "POST" as HttpMethod,

@@ -45,8 +45,7 @@ const apiCall = async (url: string, options: RequestInit = {}) => {
     (headers as Record<string, string>).Authorization = `Bearer ${token}`;
   }
 
-  const response = await fetch(`/api/v1${url}`, {
-    ...options,
+const response = await fetch(`${import.meta.env.VITE_API_URL}/v1/contacts`, {    ...options,
     headers,
   });
 

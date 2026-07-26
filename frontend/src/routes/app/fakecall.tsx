@@ -136,7 +136,7 @@ const ringtoneRef = useRef<HTMLAudioElement | null>(null);
           return;
         }
 
-        const res = await fetch("/api/v1/contacts", {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/v1/contacts`, {
           headers: { Authorization: `Bearer ${token}`, Accept: "application/json" },
         });
 

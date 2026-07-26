@@ -21,10 +21,10 @@ function Defence() {
 
     setLoading(true);
     setAdvice("");
-    setActions("");
+    setActions([]);
 
     try {
-      const res = await fetch('/api/v1/assistant/chat', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/v1/assistant/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

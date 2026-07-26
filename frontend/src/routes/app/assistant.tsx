@@ -64,7 +64,7 @@ function Assistant() {
     setIsSending(true);
 
     try {
-      const response = await fetch("/api/v1/assistant/chat", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/v1/assistant/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

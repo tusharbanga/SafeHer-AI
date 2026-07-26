@@ -213,7 +213,7 @@ function Voice() {
         };
         // Backend should notify every trusted contact, mark this user as RED in the Shared With Me screen, and start live location sharing.
         try {
-          await fetch("/api/v1/sos/trigger", {
+          await fetch(`${import.meta.env.VITE_API_URL}/v1/sos/trigger`, {
             method: "POST",
             headers: { "Content-Type": "application/json", Accept: "application/json" },
             body: JSON.stringify(payload),
