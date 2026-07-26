@@ -57,7 +57,6 @@
 
 :root {
   --radius: 1rem;
-  /* SafeHer palette — purple #7B61FF, pink #FF4D8D, indigo */
   --background: oklch(0.99 0.008 320);
   --foreground: oklch(0.18 0.04 285);
   --card: oklch(1 0 0);
