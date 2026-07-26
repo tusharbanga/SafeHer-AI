@@ -35,7 +35,7 @@ backend/
 └── .env.example
 ```
 
-## Getting Started
+<h2>Getting Started
 
 ### 1. Install dependencies
 ```bash
