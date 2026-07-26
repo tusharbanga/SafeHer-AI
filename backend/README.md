@@ -1,8 +1,8 @@
-<h1 align='center'> Future Safe Her — Backend API</h1>
+# Future Safe Her — Backend API
 
 Production-ready Node.js / Express / MongoDB backend for **Future Safe Her**, an AI-powered women safety platform. Built to match the existing frontend exactly — no extra pages, no missing features.
 
-<h2>Tech Stack</h2>
+## Tech Stack
 
 - **Runtime:** Node.js + Express.js
 - **Database:** MongoDB Atlas + Mongoose
@@ -35,7 +35,7 @@ backend/
 └── .env.example
 ```
 
-<h2>Getting Started
+## Getting Started
 
 ### 1. Install dependencies
 ```bash

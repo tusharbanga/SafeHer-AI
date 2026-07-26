@@ -11,6 +11,7 @@ const { errorHandler, notFound } = require("./middleware/errorHandler");
 
 const app = express();
 
+// ---------- Security & parsing middleware ----------
 app.use(helmet());
 app.use(
   cors({
