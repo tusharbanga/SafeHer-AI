@@ -101,7 +101,7 @@ https://safe-her-ai-blush.vercel.app
 <h3>Clone Repository</h3>
 
 ```bash
-git clone https://github.com/Tanishttha/SafeHer-AI
+git clone https://github.com/tusharbanga/SafeHer-AI
 cd SafeHer-AI
 ```
 <h3>Install Dependencies</h3>
