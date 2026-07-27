@@ -177,7 +177,7 @@ function SOS() {
             <span className="mt-1 text-lg font-extrabold tracking-widest">SOS</span>
           </button>
         </div>
-        {}
+        {/* <p className="mt-6 text-sm text-muted-foreground"><span className="font-bold text-foreground"></span></p> */}
       </div>
 
       <div className="grid grid-cols-2 gap-3">
