@@ -1,11 +1,7 @@
 <h1 align='center'>SafeHer AI</h1>
-SafeHer AI is an AI-powered women safety platform that provides real-time protection through live location sharing, SOS alerts, fake calls, AI voice assistance, and guardian monitoring. The platform enables users to instantly connect with trusted guardians during emergencies while leveraging AI for proactive safety.
-
-⸻
-
-Features
-
-User Features
+<h2 align='center'>SafeHer AI is an AI-powered women safety platform that provides real-time protection through live location sharing, SOS alerts, fake calls, AI voice assistance, and guardian monitoring. The platform enables users to instantly connect with trusted guardians during emergencies while leveraging AI for proactive safety.</h3>
+<h2>Features</h2>
+<h3>User Features</h3>
 
 * Google Authentication
 * AI Voice Assistant
@@ -18,7 +14,6 @@ User Features
 * Real-time Location Updates
 * Modern Glassmorphism UI
 
-⸻
 
 Guardian Features
 
