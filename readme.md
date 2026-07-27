@@ -5,7 +5,7 @@ SafeHer AI is an AI-powered women safety platform that combines Artificial Intel
 <h2>Live Demo</h2>
 
 ```bash
-https://safe-her-ai-blush.vercel.app
+https://safe-herai.vercel.app
 ```
 <p>The backend is deployed on Render, which automatically goes to sleep after a period of inactivity. On the first visit, it may take <b>1-2 minutes</b> for the backend to wake up. Please wait briefly before using the application.</p>
 
