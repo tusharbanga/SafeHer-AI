@@ -160,7 +160,7 @@ function Landing() {
         </div>
       </section>
 
-      {/* CTA */}
+      {}
       <section className="relative z-10 mx-auto max-w-4xl px-5 pb-24">
         <div className="relative overflow-hidden rounded-[2.5rem] gradient-brand p-10 text-center text-white shadow-glow">
           <Particles count={16} />
