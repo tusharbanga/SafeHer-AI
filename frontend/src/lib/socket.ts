@@ -7,10 +7,6 @@ const SOCKET_URL = import.meta.env.VITE_SOCKET_URL ?? import.meta.env.VITE_API_U
 let userSocket: Socket | null = null;
 let guardianSocket: Socket | null = null;
 
-/**
- * Socket authenticated as the logged-in SafeHer AI user. Used to push
- * live location pings and receive SOS acknowledgements.
- */
 export function getUserSocket(): Socket | null {
   const token = getStoredToken();
   if (!token) return null;
