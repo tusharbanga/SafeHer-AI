@@ -60,7 +60,7 @@ function Landing() {
         </div>
       </header>
 
-      {/* Hero */}
+      {}
       <section className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-5 pb-16 pt-6 lg:grid-cols-2 lg:gap-12 lg:pt-14">
         <div className="text-center lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold text-foreground/80 shadow-soft">
