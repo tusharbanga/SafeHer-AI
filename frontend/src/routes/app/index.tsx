@@ -229,11 +229,7 @@ function Dashboard() {
         </div>
       </GlassCard>
 
-{/* 
-<GlassCard className="mb-5 overflow-hidden p-0">
-  ...
-</GlassCard>
-*/}
+{}
 
       <Link to="/app/voice" className="block">
         <GlassCard className="mb-5 flex items-center gap-4">
