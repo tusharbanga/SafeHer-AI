@@ -26,10 +26,6 @@ export function getUserSocket(): Socket | null {
   return userSocket;
 }
 
-/**
- * Socket authenticated as a Guardian. Used to watch a connected user's
- * live location and receive emergency alerts in real time.
- */
 export function getGuardianSocket(): Socket | null {
   const token = getGuardianToken();
   if (!token) return null;
