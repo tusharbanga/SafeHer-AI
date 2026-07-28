@@ -141,7 +141,7 @@ function Landing() {
         </div>
       </section>
 
-      {/* Features */}
+      {}
       <section className="relative z-10 mx-auto max-w-6xl px-5 pb-24">
         <div className="mb-10 text-center">
           <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Everything you need to stay safe</h2>
