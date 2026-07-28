@@ -2,25 +2,6 @@ import http from "node:http";
 import https from "node:https";
 import type { Plugin } from "vite";
 
-/**
- * Forwards every request under /api to the Express backend during `vite dev`.
- *
- * Why this exists (and why it's a plugin, not `server.proxy`):
- * `@lovable.dev/vite-tanstack-config` silently deletes `server.proxy` (as well as
- * `server.cors` / `server.headers`) whenever it detects it's running inside a
- * Lovable sandbox. When that happens, requests to /api/* are no longer proxied
- * anywhere — they fall straight through to TanStack Start's own SSR request
- * handler. That handler has no route for e.g. /api/v1/auth/login, and because
- * fetch() sends `Accept: application/json` (not `text/html`), it responds with
- * `{"error":"Only HTML requests are supported here"}` and a 500 status — which
- * looks like a backend problem but never actually reaches Express.
- *
- * A hand-rolled Vite plugin's `configureServer` middleware is unaffected by that
- * config-stripping (it only touches the `server` config object), so this is the
- * reliable way to bridge the frontend dev server to the Express API in every
- * environment, sandboxed or not.
- */
-
 const HOP_BY_HOP_HEADERS = new Set([
   "connection",
   "keep-alive",
