@@ -52,8 +52,6 @@ function GuardianDashboard() {
   useEffect(() => {
     void loadDashboard();
   }, []);
-
-  // Fallback polling every 10s in case the socket connection drops.
   useEffect(() => {
     pollRef.current = window.setInterval(() => {
       if (selectedUserId) void loadDashboard(selectedUserId);
@@ -62,8 +60,6 @@ function GuardianDashboard() {
       if (pollRef.current) window.clearInterval(pollRef.current);
     };
   }, [selectedUserId]);
-
-  // Real-time updates via Socket.io
   useEffect(() => {
     if (!selectedUserId) return;
 
