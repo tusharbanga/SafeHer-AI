@@ -194,7 +194,6 @@ function Voice() {
       try {
         window.open(`tel:${womenHelplineNumber}`);
       } catch {
-        // fallback prompt remains visible
       }
     }
 
@@ -211,7 +210,6 @@ function Voice() {
           notifyContacts: true,
           sharedLocation: true,
         };
-        // Backend should notify every trusted contact, mark this user as RED in the Shared With Me screen, and start live location sharing.
         try {
           await fetch(`${import.meta.env.VITE_API_URL}/v1/sos/trigger`, {
             method: "POST",
@@ -219,7 +217,6 @@ function Voice() {
             body: JSON.stringify(payload),
           });
         } catch {
-          // ignore network failures
         }
       });
     }
