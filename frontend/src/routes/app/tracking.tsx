@@ -130,7 +130,6 @@ function Tracking() {
                 timestamp: next.timestamp,
               });
             } else {
-              // Socket unavailable — fall back to the REST endpoint.
               locationApi.update(next.latitude, next.longitude, next.accuracy).catch(() => undefined);
             }
           }
@@ -207,7 +206,6 @@ function Tracking() {
     return () => {
       if (isSharing) disconnectUserSocket();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const mapCenter = useMemo<L.LatLngExpression>(
