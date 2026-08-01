@@ -231,7 +231,6 @@ function Voice() {
 
   useEffect(() => {
     if (status === "Emergency") {
-      // show the prompt for manual fallback
       setShowCallPrompt(true);
     }
   }, [status]);
