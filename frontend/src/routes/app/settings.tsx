@@ -33,7 +33,6 @@ function SettingsPage() {
       await authApi.logout();
       await firebaseSignOut();
     } catch {
-      // Logout is stateless server-side (JWT); clear the local session regardless.
       await firebaseSignOut();
     } finally {
       clearAuthSession();
