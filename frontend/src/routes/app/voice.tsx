@@ -229,8 +229,6 @@ function Voice() {
 
   const [showCallPrompt, setShowCallPrompt] = useState(false);
 
-  // If user couldn't be taken to the dialer automatically (desktop or blocked),
-  // show a visible prompt with a button to call and an option to copy the number.
   useEffect(() => {
     if (status === "Emergency") {
       // show the prompt for manual fallback
