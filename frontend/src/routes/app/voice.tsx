@@ -350,3 +350,8 @@ function Voice() {
   );
 }
 
+function detectKeyword(text: string) {
+  const lower = text.toLowerCase();
+  const keywords = [...englishKeywords, ...hindiKeywords, ...hinglishKeywords];
+  return keywords.find((keyword) => lower.includes(keyword.toLowerCase()));
+}
