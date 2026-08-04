@@ -13,7 +13,10 @@ const HOP_BY_HOP_HEADERS = new Set([
   "upgrade",
 ]);
 
-
+function resolveTarget(): URL {
+  const raw = process.env.BACKEND_URL || process.env.VITE_BACKEND_URL || "http://localhost:5000";
+  return new URL(raw);
+}
 
 export default function apiBackendProxyPlugin(): Plugin {
   const target = resolveTarget();
